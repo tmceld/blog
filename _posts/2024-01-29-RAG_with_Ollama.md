@@ -1,4 +1,7 @@
-# Retrieval Augmented Generation (RAG) with Ollama
+---
+title: "Retrieval Augmented Generation (RAG) with Ollama"
+date: 2024-01-29
+---
 
 RAG: Retrival Augmented Generation
 LLM: Large Language Model
