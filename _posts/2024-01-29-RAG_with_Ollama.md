@@ -1,7 +1,7 @@
 ---
 title: "Retrieval Augmented Generation (RAG) with Ollama"
 date: 2024-01-29
-mermaid:true
+mermaid: true
 ---
 
 RAG: Retrival Augmented Generation
