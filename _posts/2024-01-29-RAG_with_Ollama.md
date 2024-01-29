@@ -8,7 +8,7 @@ LLM: Large Language Model
 ## Before we begin...
 This guide, is largely based on this excellent video by [@pixegami](https://www.youtube.com/@pixegami): [RAG + Langchain Python Project Easy AIChat For Your Docs (www.youtube.com)](https://www.youtube.com/watch?v=tcqEUSNCn8I) I have amended the code slightly to use a local LLM and HuggingFace embeddings.
 
-All my code for this can be https://github.com/tmceld/RAG_with_ollama/
+All my code for this can be [found here](https://github.com/tmceld/RAG_with_ollama/)
 ## Why?
 LLM's are fairly limited, but if we can add our own data, be it in the form of pdfs, text files or even databases, we can leverage the LLM to 'talk to us' about our own data
 ## How?
