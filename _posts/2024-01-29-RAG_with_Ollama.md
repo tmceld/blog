@@ -75,7 +75,7 @@ x = evaluator.evaluate_string_pairs(prediction=words[0], prediction_b=words[1])
 This is interesting, it tells us that in this embedding model, there is probably more mentions of the word Apple, relating to the company, than apple, meaning the fruit.
 
 ## Building our RAG
-```mermaid
+```mermaid!
 graph TD
     A[Original Text] --> B(Text Splitter)
     B -->|Split 1| C1(Chunk 1)
