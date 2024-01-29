@@ -1,4 +1,5 @@
 ---
 title: DataDive
+mermaid: true
 ---
 
