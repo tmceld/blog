@@ -76,7 +76,7 @@ x = evaluator.evaluate_string_pairs(prediction=words[0], prediction_b=words[1])
 This is interesting, it tells us that in this embedding model, there is probably more mentions of the word Apple, relating to the company, than apple, meaning the fruit.
 
 ## Building our RAG
-```mermaid!
+<div class="mermaid">
 graph TD
     A[Original Text] --> B(Text Splitter)
     B -->|Split 1| C1(Chunk 1)
@@ -96,7 +96,7 @@ graph TD
     style D2 fill:#fff,stroke:#333,stroke-width:2px
     style D3 fill:#fff,stroke:#333,stroke-width:2px
 
-```
+</div>
 
 The full code for this section can be [found here](https://github.com/tmceld/RAG_with_ollama/blob/main/documents2vectorDB.py)
 So to work with our text documents we need to load it in, split it into chunks and then embed it.
