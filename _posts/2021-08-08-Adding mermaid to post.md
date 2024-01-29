@@ -7,7 +7,7 @@ tags: [Mermaid]
 mermaid: true
 ---
 
-```mermaid
+```mermaid!
 graph LR
     A --- B
     B-->C[Happy]
