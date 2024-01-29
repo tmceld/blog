@@ -7,9 +7,9 @@ tags: [Mermaid]
 mermaid: true
 ---
 
-<div class="mermaid">
+```mermaid
 graph LR
     A --- B
     B-->C[Happy]
     B-->D(Sad);
-</div>
+```
