@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 key: blog
 title: "Generating Diagrams with Mermaid in Markdown"
 date: 2018-09-15
