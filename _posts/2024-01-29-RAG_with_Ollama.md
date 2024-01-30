@@ -76,28 +76,6 @@ x = evaluator.evaluate_string_pairs(prediction=words[0], prediction_b=words[1])
 This is interesting, it tells us that in this embedding model, there is probably more mentions of the word Apple, relating to the company, than apple, meaning the fruit.
 
 ## Building our RAG
-<div class="mermaid">
-graph TD
-    A[Original Text] --> B(Text Splitter)
-    B -->|Split 1| C1(Chunk 1)
-    B -->|Split 2| C2(Chunk 2)
-    B -->|Split 3| C3(Chunk 3)
-    
-    C1 --> D1[Embedding 1]
-    C2 --> D2[Embedding 2]
-    C3 --> D3[Embedding 3]
-    
-    style A fill:#fff,stroke:#333,stroke-width:2px
-    style B fill:#fff,stroke:#333,stroke-width:2px
-    style C1 fill:#fff,stroke:#333,stroke-width:2px
-    style C2 fill:#fff,stroke:#333,stroke-width:2px
-    style C3 fill:#fff,stroke:#333,stroke-width:2px
-    style D1 fill:#fff,stroke:#333,stroke-width:2px
-    style D2 fill:#fff,stroke:#333,stroke-width:2px
-    style D3 fill:#fff,stroke:#333,stroke-width:2px
-
-</div>
-
 The full code for this section can be [found here](https://github.com/tmceld/RAG_with_ollama/blob/main/documents2vectorDB.py)
 So to work with our text documents we need to load it in, split it into chunks and then embed it.
 ### Loading the data
@@ -172,14 +150,6 @@ if os.path.exists(CHROMA_PATH):
 ## Query for the data
 Now we have our embeddings in the vector database we are ready to query it with a LLM, all we need are our database and the same embedding function that we used to create it.
 
-```mermaid
-graph LR
-    A[QUERY] --> B(Vector Database)
-    B --> C[RESPONSE]
-    
-    style B fill:#fff,stroke:#08f,stroke-width:3px,padding:10px
-
-```
 What we are doing here is, taking our query: 'What people did Oliver Twist meet?' and use the same function as was used on the db, to turn that into an embedding, then scan through the DB and find N number of snippets that have a similar score to our question. From that the LLM reads through those chunks and decides what response to give to the user.
 
 So, first we will load the ChromaDB from earlier:
