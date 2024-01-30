@@ -92,7 +92,7 @@ This is pretty straightforward. For more on Document loaders [see here](https://
 
 The one thing worth pointing out here is that this will return a Document, but it also returns metadata _about_ the document, and, whats more, we can add to that metadata.
 ### Splitting the text
-Next we work on splitting the documents.  This is handled by
+Next we work on splitting the documents.  This is handled by the following:
 
 ```python
 from langchain.text_splitter import RecursiveCharacterTextSplitter
