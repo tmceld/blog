@@ -1,6 +1,6 @@
 ---
 date: '2026-04-05'
-layout: til
+layout: default
 tags: []
 title: how to set $EDITOR
 ---
