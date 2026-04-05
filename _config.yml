@@ -14,4 +14,4 @@ defaults:
       path: ""
       type: til
     values:
-      layout: default
+      layout: post
