@@ -1,9 +1,17 @@
 remote_theme: jekyll/minima
 mermaid: true
+
 plugins:
   - jekyll-spaceship
+
+collections:
+  til:
+    output: true
+    permalink: /til/:name/
+
 defaults:
   - scope:
-      path: "til"
+      path: ""
+      type: til
     values:
       layout: default
