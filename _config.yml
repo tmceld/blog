@@ -2,3 +2,8 @@ remote_theme: jekyll/minima
 mermaid: true
 plugins:
   - jekyll-spaceship
+defaults:
+  - scope:
+      path: "til"
+    values:
+      layout: default
