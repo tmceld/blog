@@ -1,0 +1,15 @@
+
+@import
+  "minima/skins/{{ site.minima.skin | default: 'classic' }}",
+  "minima/initialize";
+
+.site-title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.site-title-til {
+  font-size: 0.6em;
+  font-weight: normal;
+}
